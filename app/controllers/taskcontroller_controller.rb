@@ -1,2 +1,0 @@
-class TaskcontrollerController < ApplicationController
-end
