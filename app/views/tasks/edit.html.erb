@@ -9,6 +9,20 @@
     <%= f.label :details %>
     <%= f.text_area :details, class: 'form-control rows="5"' %>
   </div>
+   <div class="form-check">
+      <% if @task.completed == false %>
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input">
+          Mark as done!
+        </label>
+      <% else  %>
+        <label class="form-check-label">
+          <input type="checkbox" class="form-check-input checked">
+          Mark as undone!
+        </label>
+      <% end %>
+    </div>
   <%= f.submit class: 'btn btn-primary rows="3"' %>
 <% end %>
+
 </div>
