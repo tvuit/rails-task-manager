@@ -13,3 +13,16 @@
  *= require_tree .
  *= require_self
  */
+.container {
+  max-width: 400px;
+  text-decoration: none;
+  text-align: center;
+  padding-bottom: 15px;
+background-image: linear-gradient(to left top, #edf0e8, #eef1e9, #eff3e9, #f1f4ea, #f2f5ea);  border-radius: 5px;
+}
+
+.container li {
+  text-align: left;
+  font-family: arial;
+  color: black;
+}

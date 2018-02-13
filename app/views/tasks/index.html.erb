@@ -1,6 +1,14 @@
+<div class="container" style="margin:auto;">
 <h1>My Tasks</h1>
 <% @tasks.each do |task| %>
-<li class="list-group"><input id="checkBox" type="checkbox">  <%= link_to task.title, task_show_path(task.id)%></li>
+<ul class="list-group">
+<li class="list-group-item"><input id="checkBox" type="checkbox">  <%= link_to task.title, task_path(task.id)%></li>
+</ul>
 <%end%>
 
-<%= link_to "Add a New Task!" , new_task_path  %>
+<button type="button" class="btn btn-default btn-lg">
+  <span class="glyphicon glyphicon glyphicon-plus
+" aria-hidden="true"></span>
+  <%= link_to "Add a New Task!" , task_new_path %></span>
+</button>
+</div>
